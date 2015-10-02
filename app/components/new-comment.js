@@ -15,6 +15,18 @@ export default Ember.Component.extend({
       };
       this.set('addNewComment', false),
       this.sendAction('saveComment', input);
+    },
+
+
+    updateComment() {
+      var params = {
+      comment: this.get('comment'),
+
+      };
+
+      // this.set('updateCakeForm', false);
+      this.sendAction('updateComment', comment, params);
     }
+
   }
 });

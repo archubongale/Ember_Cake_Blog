@@ -19,5 +19,6 @@ export default Ember.Component.extend({
     updateCake(cake, params) {
       this.sendAction('updateCake', cake, params);
     }
+
   }
 });
